@@ -1,0 +1,103 @@
+body{
+    background-color: #221845;
+    color: #eaeaea;
+    font-family: 'Montserrat';
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main{
+    flex: 1; 
+}
+
+.header, .footer{
+    background-color: #581E8F;
+}
+
+.header__content{
+    display: flex;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size: 30px;
+}
+
+nav{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    align-items: center;
+}
+
+nav a{                
+  border-bottom: 3px solid transparent;   
+  transition: border-color 0.3s ease;
+}
+
+nav a:hover{
+    border-color: #471577;
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.footer__content img{
+    max-width: 100px;
+}
+
+.policy{
+    text-align: center;
+}
+
+.policy p{
+    font-size: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 240px);
+  gap: 30px;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.card {
+  max-width: 240px;
+  height: 100%;
+  background-color: #471577;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.describe{
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.describe p:last-child {
+    margin-top: auto;
+}
